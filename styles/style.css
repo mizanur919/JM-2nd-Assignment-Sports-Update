@@ -232,7 +232,7 @@ body{
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         row-gap: 30px;
-        column-gap: 0;
+        column-gap: normal;
     }
     
     .player{
