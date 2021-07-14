@@ -99,6 +99,7 @@ body{
 
 .player{
     width: 330px;
+    height: 500px;
     padding: 20px;
     background-color: #fff;
 }
@@ -170,6 +171,17 @@ body{
 
 @media only screen and (max-width:668px) {
 
+    /*----------------------*\ 
+             Media Query
+            Mobile Device
+    \*----------------------*/
+
+    /* Media Query Hero Section */
+
+    .hero-area{
+        padding:40px 0;
+    }
+
     .hero-container{
         width: 100%;
     }
@@ -198,7 +210,40 @@ body{
         margin: 0 auto;
     }
 
-    main, footer{
+    /* Media Query Player Section */
+
+    .player-area{
+        padding: 70px 0;
+        background-color: #F1F1F1;
+    }
+
+    .container{
+        width: 100%;
+    }
+    
+    .wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .players{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        row-gap: 30px;
+        column-gap: 0;
+    }
+    
+    .player{
+        width: 90%;
+        margin: 0 5%;
+        padding: 20px;
+        background-color: #fff;
+    }
+
+
+    footer{
         display: none;
     }
 }
