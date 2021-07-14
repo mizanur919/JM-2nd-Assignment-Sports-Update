@@ -220,29 +220,23 @@ body{
     .container{
         width: 100%;
     }
-    
+
     .wrapper{
         display: flex;
-        flex-direction: column;
+        justify-content: center;
         align-items: center;
     }
-    
+
     .players{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         align-items: center;
         row-gap: 30px;
-        column-gap: normal;
+        justify-items: center;
     }
+
+
     
-    .player{
-        width: 90%;
-        margin: 0 5%;
-        padding: 20px;
-        background-color: #fff;
-    }
-
-
     footer{
         display: none;
     }
