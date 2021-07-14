@@ -12,6 +12,12 @@ body{
     width: 1050px;
 }
 
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 /*----------------------*\ 
     Hero Section Area
 \*----------------------*/
@@ -55,6 +61,12 @@ body{
     color: #FFFFFF;
     background-color: #E02C6D;
     padding: 10px 24px;
+    border-radius: 0;
+    transition: border-radius .5s;
+}
+
+.hero-info a:hover{
+    border-radius: 20px 0 20px 0;
 }
 
 .hero-info a i{
@@ -77,16 +89,6 @@ body{
 .player-area{
     padding: 70px 0 120px 0;
     background-color: #F1F1F1;
-}
-
-.container{
-    width: 1050px;
-}
-
-.wrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
 
 .players{
@@ -124,6 +126,69 @@ body{
 }
 
 /*----------------------*\ 
+    Photo Gallery Section
+\*----------------------*/
+
+/* .photo-gallery-area{}
+
+.photos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    column-gap: 30px;
+    row-gap: 27px;
+}
+
+.photo{
+    width: 330px;
+    height: 290px;
+    position: relative;
+    overflow: hidden;
+}
+
+.photo:hover .photo-details{
+    display: block;
+    transform: scale(.5);
+}
+
+.photo:hover .photo-thumbnail{
+    transform: scale(1.2);
+}
+
+.photo img{
+    width: 100%;
+}
+
+.photo-details{
+    display: none;
+    position: absolute;
+    top: 32px;
+    left: 53px;
+    height: 200px;
+    width: 200px;
+    background-color: rgba(0, 0, 0, .7);
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.photo-details h3{
+    margin: 0;
+    padding: 12px 0;
+    font-size: 16px;
+}
+
+.photo-details p{
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    text-align: justify;
+} */
+
+
+
+
+/*----------------------*\ 
     Footer Section
 \*----------------------*/
 
@@ -150,20 +215,43 @@ body{
     padding: 30px 0 10px 0;
 }
 
-.footer-details .social-icons i{
-    width: 18px;
-    height: 18px;
+.footer-details .social-icons a{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
-    padding: 18px;
-    font-size: 22px;
+    border: 2px solid transparent;
     background-color: #E7E7E8;
     color: #969BAB;
-    margin: 0 8px;
+    padding: 10px;
+    font-size: 22px;
+    transition: border .5s;
+}
+
+.footer-details .social-icons a:hover{
+    border: 2px solid #E02C6D ;
+    background-color: transparent;
+    color: #E02C6D;
+}
+
+.footer-details .social-icons i{
+    /* width: 18px;
+    height: 18px; */
+    border-radius: 50%;
+    /* padding: 18px; */
+    /* font-size: 22px; */
+    /* background-color: #E7E7E8;
+    color: #969BAB; */
+    /* margin: 0 8px; */
 }
 
 .footer-details .copyright p{
     font-size: 24px;
 }
+
+
+
+
 
 /*----------------------*\ 
     Media Query
