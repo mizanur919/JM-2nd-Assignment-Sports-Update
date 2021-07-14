@@ -169,12 +169,12 @@ body{
     Media Query
 \*----------------------*/
 
-@media only screen and (max-width:668px) {
+/*----------------------*\ 
+      Media Query
+     Mobile Device
+\*----------------------*/
 
-    /*----------------------*\ 
-             Media Query
-            Mobile Device
-    \*----------------------*/
+@media only screen and (max-width:668px) {
 
     /* Media Query Hero Section */
 
@@ -235,9 +235,100 @@ body{
         justify-items: center;
     }
 
+    /* Media Query Footer Section */
 
+    .container{
+        width: 100%;
+    }
+
+    .footer-details .logo{
+        width:70%;
+    }
+
+    .footer-details .logo img{
+        width: 100%;
+    }
+
+}
+
+/*----------------------*\ 
+      Media Query
+     Tablet Device
+\*----------------------*/
+
+@media only screen and (min-width:669px) and (max-width:992px) {
     
-    footer{
-        display: none;
+    /* Media Query Hero Section */
+
+    .hero-area{
+        padding:40px 0;
+    }
+
+    .hero-container{
+        width: 100%;
+    }
+
+    .hero-contents{
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: normal;
+    }
+
+    .hero-info{
+        margin: 0 0 50px 0;
+        text-align: center;
+    }
+
+    .hero-info h1{
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .hero-info a{
+        text-align: center;
+    }
+
+    .hero-image{
+        width: 300px;
+        height: auto;
+        margin: 0 auto;
+    }  
+    
+    /* Media Query Player Section */
+
+    .player-area{
+        padding: 70px 0;
+        background-color: #F1F1F1;
+    }
+
+    .container{
+        width: 100%;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 30px;
+    }
+
+     /* Media Query Footer Section */
+
+     .container{
+        width: 100%;
+    }
+
+    .footer-details .logo{
+        width:70%;
+    }
+
+    .footer-details .logo img{
+        width: 100%;
     }
 }
